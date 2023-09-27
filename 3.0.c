@@ -1,28 +1,20 @@
-#include<stdio.h>
-int main(){
-    int a;
-    int b;
-    int soma;
+#include <stdio.h>
 
-    printf("Digite dois numeros:\n");
+int main() {
+    int a, b;
+
+    printf("Introduza dois numeros:\n");
     scanf("%d %d", &a, &b);
 
-    while(a>b){
-    soma = a+b;
-    printf("%d + %d = %d\n", a, b, soma);
-    soma++;
-    while(a<b){
-    soma = a+b;
-    printf("%d + %d = %d\n", a, b, soma);
-    soma++;
-    }
+    if (a <= b) {
+        for (int i = a; i <= b; i++) { //Inicia com o valor de a, i<=b b pode ser maior igual a i=a, e acrescenta +1
+            printf("%d + %d = %d\n", a, i, a + i);
+        }
+    } else {
+        for (int i = a; i >= b; i--) {
+            printf("%d + %d = %d\n", a, i, a + i);
+        }
     }
 
     return 0;
 }
-/*Es
-reva um programa que re
-ebe dois números a e b e a
-ha a soma de todos os números
-entre a e b. Faça seu programa fun
-ionar até mesmo se a for maior do que b.*/

@@ -3,18 +3,16 @@
 int main() {
     int a, b;
 
-    printf("Introduza dois numeros:\n");
+    printf("Digite dois números: ");
     scanf("%d %d", &a, &b);
 
-    if (a <= b) {
-        for (int i = a; i <= b; i++) { //Inicia com o valor de a, i<=b b pode ser maior igual a i=a, e acrescenta +1
-            printf("%d + %d = %d\n", a, i, a + i);
-        }
-    } else {
-        for (int i = a; i >= b; i--) {
-            printf("%d + %d = %d\n", a, i, a + i);
-        }
+    int soma = 0; // Inicializa a variável de soma
+
+    for (int i = a; i <= b; i++) {
+        soma = soma + i; // Acumula os números entre a e b
     }
+
+    printf("A soma de todos os números entre %d e %d é: %d\n", a, b, soma);
 
     return 0;
 }

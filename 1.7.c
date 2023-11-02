@@ -1,36 +1,30 @@
 #include <stdio.h>
 
 int main() {
-    int valor;
-    int notas100, notas50, notas10, notas5, notas1; //Numero de notas
+  int r;
+  int n100, n50, n10, n5, n1;
 
-    printf("Digite o valor a ser pago: "); //Valor inserido pelo usúario
-    scanf("%d", &valor);
+  printf("Digite o valor a ser pago: ");
+  scanf("%d", &r);
 
-    // Calcula o número de notas de 100
-    notas100 = valor / 100; // Calcula o numero de notas de 100 usadas, dividi o valor do usuario por 100.
-    valor %= 100; //se o resto da divisão do valor for diferente de 100, eh o numero de notas.
+  n100 = r / 100; // Calcular o numero de notas
+  r = r % 100;    // O resto da divisão do valor é as futuras notas.
 
-    // Calcula o número de notas de 50
-    notas50 = valor / 50; // Calcula o numero de notas de 50 usadas, dividi o valor do usuario por 100.
-    valor %= 50; //se o resto da divisão do valor for diferente de 100, eh o numero de notas.
+  n50 = r / 50; // Calcular o numero de notas
+  r = r % 50;   // O resto da divisão do valor é as futuras notas.
 
-    // Calcula o número de notas de 10
-    notas10 = valor / 10; // Calcula o numero de notas de 100 usadas, dividi o valor do usuario por 100.
-    valor %= 10; //se o resto da divisão do valor for diferente de 100, eh o numero de notas.
+  n10 = r / 10; // Calcular o numero de notas
+  r = r % 10;   // O resto da divisão do valor é as futuras notas.
 
-    // Calcula o número de notas de 5
-    notas5 = valor / 5; // Calcula o numero de notas de 100 usadas, dividi o valor do usuario por 100.
-    valor %= 5; //se o resto da divisão do valor for diferente de 100, eh o numero de notas.
+  n5 = r / 5; // Calcular o numero de notas
+  r = r % 5;  // O resto da divisão do valor é as futuras notas.
 
-    // Calcula o número de notas de 1
-    notas1 = valor;
+ n1 = r/1;
+  printf("Notas de 100: %d\n", n100);
+  printf("Notas de 50: %d\n", n50);
+  printf("Notas de 10: %d\n", n10);
+  printf("Notas de 5: %d\n", n5);
+  printf("Notas de 1: %d\n", n1);
 
-    printf("Notas de 100: %d\n", notas100);
-    printf("Notas de 50: %d\n", notas50);
-    printf("Notas de 10: %d\n", notas10);
-    printf("Notas de 5: %d\n", notas5);
-    printf("Notas de 1: %d\n", notas1);
-
-    return 0;
+  return 0;
 }

@@ -1,3 +1,4 @@
+//Recebe tres numeros a,b,e e imprime o menor deles
 #include<stdio.h>
 int main (){
     int a, b,c;

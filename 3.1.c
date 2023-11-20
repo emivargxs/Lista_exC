@@ -1,3 +1,5 @@
+//Repita o exercicio anterior, mas ache apenas a soma dos numeros que não são multiplos de sete
+
 #include <stdio.h>
 
 int main() {

@@ -1,22 +1,16 @@
+//Recebe tres numeros e diz se esta em ordem crescente
+
 #include<stdio.h>
-
 int main(){
-    int n1, n2, n3;
-    //estao em ordem 
-    // nao estao em ordem
-    printf("Introduza tres numeros:\n");
-    scanf("%d %d %d", &n1, &n2, &n3);
+  int a,b,c;
+  printf("Introduza tres numeros: ");
+  scanf(" %d %d %d",&a,&b,&c);
+  if(a<b<c){
+    printf("Esta em ordem crescente");
+  }else{
+    printf("Nao esta em ordem crescente");
 
-    if(a=<b && b=<c){
-        printf("Estao em ordem crescente.\n");
-
-    }
-        else{
-            printf("Nao esta em ordem crescente.\n");
-        }
-
-
-
-    return 0;
-
+    
+  }
+  return 0;
 }
